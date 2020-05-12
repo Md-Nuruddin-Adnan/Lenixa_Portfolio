@@ -33,6 +33,10 @@
   .tab-menu a {
     padding: 0 20px;
   }
+  .tab-menu a::before {
+    top: 100%;
+    left: 45%;
+  }
 
   .twitch #chat_embed {
     height: 400px;

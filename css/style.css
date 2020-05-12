@@ -54,6 +54,56 @@ body {
 }
 /* ===//end of header section === */
 
+
+/* === side-nav section start === */
+.side-nav {
+  position: absolute;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background: #181818;
+  z-index: 999;
+  transition: all 0.2s linear;
+}
+.side-nav .close-btn {
+  color: red;
+  opacity: 0.8;
+}
+.side-nav .close-btn:hover {
+  opacity: 1;
+}
+.side-nav .close-btn-box {
+  margin: 20px 20px 23px 0;
+}
+.side-nav li a {
+  display: block;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: .8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.side-nav li a.active,
+.side-nav li a:hover {
+  background: #313131;
+}
+.side-nav li a i{
+  color: rgba(255, 255, 255, 0.5);
+  padding-right: 20px;
+  width: 30px;
+  font-size: 1rem;
+}
+.side-nav li a:hover,
+.side-nav li a.active,
+.side-nav li a.active i,
+.side-nav li a:hover i{
+  color: rgba(255, 255, 255, 1);
+}
+.side-nav.show {
+  right: 0;
+}
+/* ===//end of side-nav section === */
+
 /* === page-content start === */
 .page-content {
   background: #0d0d0d;
@@ -98,9 +148,29 @@ body {
   font-size: 30px;
   display: block;
   color: rgba(255, 255, 255, 0.15);
+  position: relative;
   transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
   -moz-transition: 0.2s linear;
+}
+.tab-menu a::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  top: 50%;
+  left: -13px;
+  transform: translateY(-50%);
+  z-index: 99;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: 0.2s linear;
+}
+.tab-menu a.active::before,
+.tab-menu a:hover::before {
+  background: #fff;
 }
 .tab-menu a:hover,
 .tab-menu a.active {
@@ -129,9 +199,14 @@ body {
 
 /* === instagram section start === */
 .inst-image {
-  /* max-height: 600px; */
+  max-height: 300px;
   overflow: hidden;
   margin-bottom: 30px;
+}
+.inst-image .instagram-media {
+  position: relative;
+  top: -60px;
+  border: none !important;
 }
 
 /* ===//end of instagram section === */
