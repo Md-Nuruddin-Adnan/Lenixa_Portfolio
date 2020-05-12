@@ -1,0 +1,183 @@
+@font-face {
+  font-family: proxima-regular;
+  src: url(../fonts/ProximaNova-Regular.otf);
+}
+@font-face {
+  font-family: proxima-bold;
+  src: url(../fonts/ProximaNova-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+ 
+::after, ::before {
+  box-sizing: border-box;
+}
+ 
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+   
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: proxima-regular;
+  color: #fff;
+  background: #0d0d0d;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+/* basic css end */
+
+
+
+/* main css start */
+
+/* === header section start === */
+.header h1 {
+  background: #151232;
+  font-family: proxima-bold;
+  text-align: center;
+  font-size: 50px;
+  padding: 50px 0 150px 0;
+  letter-spacing: 15px;
+}
+/* ===//end of header section === */
+
+/* === page-content start === */
+.page-content {
+  background: #0d0d0d;
+  margin: -100px 100px 100px 100px;
+  padding: 20px 30px 50px 20px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 30px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 30px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px 1px rgba(0,0,0,0.75);
+}
+/* ===//end of page-content === */
+
+/* === page-header section start === */
+.page-header .logo img{
+  max-width: 70px;
+}
+.page-header .nav-menu .btn{
+  font-size: 30px;
+  color: #fff;
+}
+/* ===//end of page-header section === */
+
+/* === tab-menu section start === */
+.tab-menu {
+  position: absolute;
+  /* top: 50%; */
+  top: 180px;
+  left: 50px;
+  /* transform: translateY(-50%); */
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
+  padding: 0px 10px;
+}
+.tab-menu .nav {
+  display: block;
+}
+.tab-menu .main-tab-menu img{
+  width: 35px;
+}
+.tab-menu a {
+  padding: 20px 0;
+  font-size: 30px;
+  display: block;
+  color: rgba(255, 255, 255, 0.15);
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: 0.2s linear;
+}
+.tab-menu a:hover,
+.tab-menu a.active {
+  color: #fff;
+}
+.nav-tabs {
+  border-bottom: none;
+}
+/* ===//end of tab-menu section === */
+
+/* === twitch section start === */
+.twitch .twitch-video {
+  width: 100%;
+}
+.twitch #chat_embed {
+  width: 100%;
+  background-color: #18181b !important;
+}
+.chat-room {
+  background: #18181b !important;
+}
+.tw-c-background-base {
+  background-color: #18181b !important;
+}
+/* ===//end of twitch section === */
+
+/* === instagram section start === */
+.inst-image {
+  /* max-height: 600px; */
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+/* ===//end of instagram section === */
+
+/* === footer section start === */
+.footer .f-title {
+  font-family: proxima-bold;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 30px 0 10px 0;
+  display: block;
+}
+.footer p {
+  font-size: 16px;
+  color: #fff;
+}
+/* ===//end of footer section === */
+
+
+
+/* === copyright section start === */
+.copyright {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 99;
+  transform: rotate(90deg);
+  transform-origin: right;
+}
+.copyright p {
+  position: relative;
+  font-size: 16px;
+  letter-spacing: .5px;
+  color: #fff;
+}
+.copyright p::before {
+  content: '';
+  width: 120px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  right: 105%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
+/* ===//end of copyright section === */
